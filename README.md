@@ -42,6 +42,46 @@ Apollo Cache Control exposes cache control hints for an individual request under
 
 - If `scope` is set to `PRIVATE`, that indicates anything under this path should only be cached per-user, unless the value is overridden on a subpath. `PUBLIC` is the default and means anything under this path can be stored in a shared cache.
 
+### Example
+
+```graphql
+query {
+  post(id: 1) {
+    title
+    votes
+    readByCurrentUser
+  }
+}
+```
+
+```json
+"cacheControl": {
+  "version": 1,
+  "hints": [
+    {
+      "path": [
+        "post"
+      ],
+      "maxAge": 240
+    },
+    {
+      "path": [
+        "post",
+        "votes"
+      ],
+      "maxAge": 30
+    },
+    {
+      "path": [
+        "post",
+        "readByCurrentUser"
+      ],
+      "scope": "PRIVATE"
+    }
+  ]
+}
+```
+
 ## Request Format
 
 Apollo Cache Control also allows clients to include cache control instructions in a request. For now, the only specified field is `noCache`, which forces the proxy never to return a cached response, but always fetch the query from the origin.
