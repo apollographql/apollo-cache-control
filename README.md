@@ -2,7 +2,7 @@
 
 Apollo Cache Control is a GraphQL extension for fine-grained cache control that can inform server-side or client-side GraphQL caches. It describes a format for a GraphQL API to return information about cache expiration and scope, as well as controls that a client can use to override caching.
 
-It’s already supported by [Apollo Engine](https://www.apollographql.com/engine/), and we’re excited to see what other kinds of integrations people can build on top of this format.
+This data can be consumed by [Apollo Engine](https://www.apollographql.com/engine/) or any other tool to inform caching and visualize the cache policies that are in effect for a particular request.
 
 ## Supported GraphQL Servers
 
