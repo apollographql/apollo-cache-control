@@ -6,7 +6,7 @@ This data can be consumed by [Apollo Engine](https://www.apollographql.com/engin
 
 ## Supported GraphQL Servers
 
-- [Node.js](https://github.com/apollographql/apollo-cache-control-js)
+- [Node.js](https://github.com/apollographql/apollo-server/tree/master/packages/apollo-cache-control)
 
 If you’re interested in working on support for other GraphQL servers, please get in touch on the `#apollo-cache-control` channel on the [Apollo Slack](http://www.apollodata.com/#slack).
 
