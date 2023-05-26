@@ -1,3 +1,9 @@
+# Archival
+This repo was archived by the Apollo Security team on 2023-05-26
+
+Please reach out at security@apollographql.com with questions.
+
+
 ## ⚠️ Deprecation Notice
 
 This specification is no longer supported by Apollo. Please see our [documentation](https://www.apollographql.com/docs/apollo-server/performance/caching/) for alternative approaches.
